@@ -119,20 +119,20 @@
       <section class="mt-10 lg:mt-20">
         <div class="grid gap-4 grid-cols-1 lg:grid-cols-2 mt-4 lg:mt-5">
           <div class="card w-full bg-base-100 shadow-xl image-full">
-            <figure><img src="Images/2.png" alt="Shoes" /></figure>
+            <figure><img class="w-full h-full" src="Images/2.png" alt="Shoes" /></figure>
             <div class="card-body">
-              <h2 class="card-title text-xl lg:text-4xl font-extrabold">Junior Program</h2>
-              <p class="text-base lg:text-xl">If a dog chews shoes whose shoes does he choose?</p>
+              <h2 class="card-title mt-[70px] lg:mt-[130px] text-xl lg:text-4xl font-extrabold">Junior Program</h2>
+              <p class="text-base lg:text-xl">For students whose age range is between 8-12 years, only those can register in this section.</p>
               <div class="card-actions justify-start">
                 <button class="btn btn-error text-white">Register Now</button>
               </div>
             </div>
           </div>
           <div class="card w-full bg-base-100 shadow-xl image-full">
-            <figure><img src="Images/3.png" alt="Shoes" /></figure>
+            <figure><img class="w-full h-full" src="Images/3.png" alt="Shoes" /></figure>
             <div class="card-body">
-              <h2 class="card-title text-xl lg:text-4xl font-extrabold">Teenager Program</h2>
-              <p class="text-base lg:text-xl">If a dog chews shoes whose shoes does he choose?</p>
+              <h2 class="card-title mt-[70px] lg:mt-[130px] text-xl lg:text-4xl font-extrabold">Teenager Program</h2>
+              <p class="text-base lg:text-xl">For students whose age range is between 13-17 years, only those can register in this section.</p>
               <div class="card-actions justify-start">
                 <button class="btn btn-error text-white">Register Now</button>
               </div>
@@ -141,10 +141,10 @@
         </div>
         <div class="mt-4 lg:mt-5">
           <div class="card w-full bg-base-100 shadow-xl h-[240px] lg:h-[400px] image-full">
-            <figure><img src="Images/4.png" alt="Shoes" /></figure>
+            <figure><img class="w-full h-full" src="Images/4.png" alt="Shoes" /></figure>
             <div class="card-body">
-              <h3 class="card-title text-xl lg:text-4xl font-extrabold">Professional Program</h3>
-              <p class="text-base lg:text-xl">If a dog chews shoes whose shoes does he choose?</p>
+              <h3 class="card-title mt-[100px] lg:mt-[150px] text-xl lg:text-4xl font-extrabold">Professional Program</h3>
+              <p class="text-base lg:text-xl">For students whose age range is between 18-25 years, only those can register in this section.</p>
               <div class="card-actions justify-start">
                 <button class="btn btn-error text-white">Register Now</button>
               </div>
@@ -154,7 +154,7 @@
       </section>
       <section>
         <section class="text-center space-y-9">
-          <hr class="border-dashed border-2 mx-2 mt-12 lg:mt-20">
+          <hr class="border-dashed border-2 mx-2 mt-28 lg:mt-20">
           <h3 class="mt-2 lg:mt-10 text-xl lg:text-4xl font-extrabold">Our New Products</h3>
           <p class="text-gray-500 mx-2 lg:mx-40">These are our new products. Several types of products are here. Choose your products based on your preference and affordability. And then check that out. Make sure you picked up the right products. And don't forget to click.</p>
           <hr class="border-dashed border-2 mx-2">
@@ -384,12 +384,13 @@
       <section>
         <div class="card mt-12 h-[150px] w-full bg-blue-50 text-black">
           <p class="mt-6 text-center text-2xl lg:text-3xl font-extrabold">Social Media</p>
-          <img class="w-52 mt-6" src="Images/Social.png" alt="">
-
+          <div class="mx-auto text-center">
+            <img class="w-52 mt-6" src="Images/Social.png" alt="">
+          </div>
         </div>
       </section>
     </main>
-    <footer class="footer p-28 lg:h-[400px] bg-[#131318] text-white mt-20">
+    <footer class="footer p-16 lg:p-28 lg:h-[400px] bg-[#131318] text-white mt-20">
       <aside class="space-y-2">
         <p class="text-2xl lg:text-3xl font-extrabold">Get In Touch</p>
         <p>If you have any query or registration related issue, then talk with us<br/>We will response as soon as possible.</p>
@@ -402,29 +403,30 @@
           <p>(+62) 123-321-54</p>
         </div>
       </aside>
-      <nav>
-        <header class="footer-title">Company</header> 
-        <a class="link link-hover">About Us</a>
-        <a class="link link-hover">Leadership</a>
-        <a class="link link-hover">Career</a>
-        <a class="link link-hover">News and Articles</a>
-        <a class="link link-hover">Legal Notice</a>
-      </nav> 
-      <nav>
-        <header class="footer-title">Support</header> 
-        <a class="link link-hover">Help Center</a>
-        <a class="link link-hover">FAQ</a>
-        <a class="link link-hover">Ticket Support</a>
-        <a class="link link-hover">Contact Us</a>
-      </nav>
-      <nav>
+      <div class="flex gap-10 lg:gap-32">
+        <div class="flex flex-col space-y-2">
+          <header class="footer-title">Company</header> 
+          <a class="link link-hover">About Us</a>
+          <a class="link link-hover">Leadership</a>
+          <a class="link link-hover">Career</a>
+          <a class="link link-hover">News and Articles</a>
+          <a class="link link-hover">Legal Notice</a>
+        </div> 
+        <div class="flex flex-col space-y-2">
+          <header class="footer-title">Support</header> 
+          <a class="link link-hover">Help Center</a>
+          <a class="link link-hover">FAQ</a>
+          <a class="link link-hover">Ticket Support</a>
+          <a class="link link-hover">Contact Us</a>
+        </div>
+      </div>
+      <div class="mx-auto text-center">
         <header class="footer-title">Services</header> 
         <a class="link link-hover">Academy</a>
         <a class="link link-hover">Group Lesson</a>
         <a class="link link-hover">Private Lesson</a>
         <a class="link link-hover">Hockey for kids</a>
         <a class="link link-hover">Hockey for Adult</a>
-      </nav>
       </div>
     </footer>
 </body>
