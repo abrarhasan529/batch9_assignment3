@@ -4,13 +4,368 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hockey's</title>
+    <link rel="stylesheet" href="styles/hockey.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+    </script>
+    <style>
+        .font-manrope{
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
 </head>
-<body>
-    <header>
+<body class="font-manrope">
+    <header class="mt-2 px-2 lg:container lg:mx-auto lg:px-20 lg:mt-6">
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 text-base shadow bg-base-100 rounded-box w-52">
+                      <li><a>Home</a></li>
+                      <li><a>About</a></li>
+                      <li><a>Pages</a></li>
+                      <li><a>Blog</a></li>
+                      <li><a>Contact</a></li>
+                    </ul>
+                  </div>
+                  <a class="btn btn-ghost font-extrabold text-xl lg:text-4xl gap-0">Hockey<span class="text-[#FF4240]">'</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu text-base menu-horizontal px-1">
+                    <li><a class="text-[#FF4240]">Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Pages</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Contact</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end gap-6">
+                    <button class="hidden lg:flex"><img src="Images/Frame.png" alt=""></button>
+                    <a class="btn w-[103px] lg:w-32 btn-error text-white">Get Ticket</a>
+                </div>
+            </div>
+        </nav>
+        <div class="carousel mx-2 mt-2 lg:mt-12 lg:w-full lg:h-[600px]">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="Images/1.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide2" class="btn btn-circle">❮</a> 
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="Images/Schools 1.jpg" class="rounded-lg w-full lg:rounded-2xl" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide1" class="btn btn-circle">❮</a> 
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+        </div>
     </header>
-    <main>
+    <main class="mt-6 px-2 lg:container lg:mx-auto lg:px-20 lg:mt-28">
+      <section class="text-center space-y-9">
+        <hr class="border-dashed border-2 mx-2">
+        <h3 class="mt-2 lg:mt-10 text-xl lg:text-4xl font-extrabold">Professional Hockeys Club</h3>
+        <p class="text-gray-500 mx-2 lg:mx-40">This hockey club is widely regarded as one of the most successful franchises in the world, With an impressive total of 24 International Cup Championships. And our students hold the record for the most titles in the league.</p>
+        <hr class="border-dashed border-2 mx-2">
+      </section>
+      <section class="text-center justify-center mt-10 lg:mt-12 lg:flex lg:justify-center lg:space-x-60">
+        <div class="space-y-3 lg:space-y-5">
+          <div class="radial-progress text-[#F37A48]" style="--value:87;" role="progressbar"><span class="text-black font-extrabold">87%</span></div>
+          <h3 class="text-xl font-bold">Prayer Facility</h3>
+          <p class="text-gray-500 mx-10 lg:mx-auto">We have 87% player facilities which is our main asset.</p>
+        </div>
+        <div class="space-y-3 lg:space-y-5">
+          <div class="radial-progress text-success mt-7 lg:mt-auto" style="--value:95;" role="progressbar"><span class="text-black font-extrabold">95%</span></div>
+          <h3 class="text-xl font-bold">Expert Coach</h3>
+          <p class="text-gray-500 mx-10 lg:mx-auto">Our all coaches are quite experienced and expert.</p>
+        </div>
+        <div class="space-y-3 lg:space-y-5">
+          <div class="radial-progress text-warning mt-7 lg:mt-auto" style="--value:90;" role="progressbar"><span class="text-black font-extrabold">90%</span></div>
+          <h3 class="text-xl font-bold">Senior Player</h3>
+          <p class="text-gray-500 mx-10 lg:mx-auto">Almost 90% of our total players are senior player.</p>
+        </div>
+        <div class="space-y-3 lg:space-y-5">
+          <div class="radial-progress text-info mt-7 lg:mt-auto" style="--value:80;" role="progressbar"><span class="text-black font-extrabold">80%</span></div>
+          <h3 class="text-xl font-bold">Training Ground</h3>
+          <p class="text-gray-500 mx-10 lg:mx-auto">We have a huge and eco-friendly training ground.</p>
+        </div>
+      </section>
+      <section>
+        <section class="text-center space-y-9">
+          <hr class="border-dashed border-2 mx-2 mt-12 lg:mt-20">
+          <h3 class="mt-2 lg:mt-10 text-xl lg:text-4xl font-extrabold">Program Sections</h3>
+          <p class="text-gray-500 mx-2 lg:mx-40">There are three types of program sections in our club. These are Junior Program, Teenage Program, and Professional program. Each sections has specific age range. Professional Program is the most important program.</p>
+          <hr class="border-dashed border-2 mx-2">
+        </section>
+      </section>
+      <section class="justify-center mt-20">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+          <div class="bg-[url('../Images/2.png')] bg-no-repeat bg-contain lg:bg-cover lg:h-[338px] space-y-7 px-12 p-32">
+            <h3 class="text-white text-xl lg:text-3xl font-extrabold">Junior Program</h3>
+            <p class="text-white">Students who are from age 8-12 are eligible for this program</p>
+            <button class="btn lg:w-32 btn-error text-white">Register Now!</button>
+          </div>
+          <div class="bg-[url('../Images/3.png')] bg-no-repeat bg-contain lg:bg-cover lg:h-[338px] space-y-7 px-12 p-32">
+            <h3 class="text-white text-xl lg:text-3xl font-extrabold">Teenage Program</h3>
+            <p class="text-white">Students who are from age 13-18 are eligible for this program</p>
+            <button class="btn lg:w-32 btn-error text-white">Register Now!</button>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-1 mt-5">
+          <div class="bg-[url('../Images/4.png')] bg-no-repeat bg-contain lg:bg-cover lg:h-[338px] space-y-7 px-12 p-60">
+            <h3 class="text-white  text-xl lg:text-3xl font-extrabold">Professional Program</h3>
+            <p class="text-white">Students who are from age 8-12 are eligible for this program</p>
+            <button class="btn lg:w-32 btn-error text-white">Register Now!</button>
+          </div>
+        </div>
+      </section>
+      <section>
+        <section class="text-center space-y-9">
+          <hr class="border-dashed border-2 mx-2 mt-12 lg:mt-20">
+          <h3 class="mt-2 lg:mt-10 text-xl lg:text-4xl font-extrabold">Our New Products</h3>
+          <p class="text-gray-500 mx-2 lg:mx-40">These are our new products. Several types of products are here. Choose your products based on your preference and affordability. And then check that out. Make sure you picked up the right products. And don't forget to click.</p>
+          <hr class="border-dashed border-2 mx-2">
+        </section>
+      </section>
+      <section>
+        <div class="grid grid-cols-1 lg:w-[1240px] lg:grid-cols-2 lg:gap-20 lg:ml-12">
+          <div class="hero  rounded-2xl mt-12">
+            <div class="hero-content lg:flex-row">
+              <img src="Images/5.png" class="max-w-sm rounded-lg shadow-2xl" />
+              <div class="space-y-2">
+                <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400">  5.0</input>
+                <i class="fa-solid fa-eye">  20</i>
+                <i class="fa-regular fa-heart">  200</i>
+                <h1 class="text-sm font-bold">Full Leather Jacket</h1>
+                <p class="text-sm">100% original product. Imported from America.</p>
+                <p class="text-[#FF4240] font-extrabold">Price - $85.00</p>
+                <i class="fa-solid fa-cart-shopping"><span class="text-xs">        Delivery Fee: Free</span></i>
+              </div>
+            </div>
+          </div>
+          <div class="hero  rounded-2xl mt-12">
+            <div class="hero-content lg:flex-row">
+              <img src="Images/6.png" class="max-w-sm rounded-lg shadow-2xl" />
+              <div class="space-y-2">
+                <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400">  5.0</input>
+                <i class="fa-solid fa-eye">  20</i>
+                <i class="fa-regular fa-heart">  200</i>
+                <h1 class="text-sm font-bold">Hockey Ball</h1>
+                <p class="text-sm">100% original product. Imported from America.</p>
+                <p class="text-[#FF4240] font-extrabold">Price - $20.00</p>
+                <i class="fa-solid fa-cart-shopping"><span class="text-xs">        Delivery Fee: Free</span></i>
+              </div>
+            </div>
+          </div>
+          <div class="hero  rounded-2xl mt-12">
+            <div class="hero-content lg:flex-row">
+              <img src="Images/7.png" class="max-w-sm rounded-lg shadow-2xl" />
+              <div class="space-y-2">
+                <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400">  5.0</input>
+                <i class="fa-solid fa-eye">  20</i>
+                <i class="fa-regular fa-heart">  200</i>
+                <h1 class="text-sm font-bold">Cap for Hockey</h1>
+                <p class="text-sm">100% original product. Imported from America.</p>
+                <p class="text-[#FF4240] font-extrabold">Price - $15.00</p>
+                <i class="fa-solid fa-cart-shopping"><span class="text-xs">        Delivery Fee: Free</span></i>
+              </div>
+            </div>
+          </div>
+          <div class="hero  rounded-2xl mt-12">
+            <div class="hero-content lg:flex-row">
+              <img src="Images/8.png" class="max-w-sm rounded-lg shadow-2xl" />
+              <div class="space-y-2">
+                <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400">  5.0</input>
+                <i class="fa-solid fa-eye">  20</i>
+                <i class="fa-regular fa-heart">  200</i>
+                <h1 class="text-sm font-bold">Full Cotton Jersey</h1>
+                <p class="text-sm">100% original product. Imported from America.</p>
+                <p class="text-[#FF4240] font-extrabold">Price - $40.00</p>
+                <i class="fa-solid fa-cart-shopping"><span class="text-xs">        Delivery Fee: Free</span></i>
+              </div>
+            </div>
+          </div>
+          <div class="hero  rounded-2xl mt-12">
+            <div class="hero-content lg:flex-row">
+              <img src="Images/9.png" class="max-w-sm rounded-lg shadow-2xl" />
+              <div class="space-y-2">
+                <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400">  5.0</input>
+                <i class="fa-solid fa-eye">  20</i>
+                <i class="fa-regular fa-heart">  200</i>
+                <h1 class="text-sm font-bold">Helmet</h1>
+                <p class="text-sm">100% original product. Imported from America.</p>
+                <p class="text-[#FF4240] font-extrabold">Price - $55.00</p>
+                <i class="fa-solid fa-cart-shopping"><span class="text-xs">        Delivery Fee: Free</span></i>
+              </div>
+            </div>
+          </div>
+          <div class="hero  rounded-2xl mt-12">
+            <div class="hero-content lg:flex-row">
+              <img src="Images/10.png" class="max-w-sm rounded-lg shadow-2xl" />
+              <div class="space-y-2">
+                <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400">  5.0</input>
+                <i class="fa-solid fa-eye">  20</i>
+                <i class="fa-regular fa-heart">  200</i>
+                <h1 class="text-sm font-bold">World Cup Football</h1>
+                <p class="text-sm">100% original product. Imported from America.</p>
+                <p class="text-[#FF4240] font-extrabold">Price - $35.00</p>
+                <i class="fa-solid fa-cart-shopping"><span class="text-xs">        Delivery Fee: Free</span></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <section class="text-center space-y-9">
+          <hr class="border-dashed border-2 mx-2 mt-12 lg:mt-20">
+          <h3 class="mt-2 lg:mt-10 text-xl lg:text-4xl font-extrabold">Client Questions</h3>
+          <p class="text-gray-500 mx-2 lg:mx-40">Here are some frequently asked questions that customers frequently asked us. So have a look on these so that you may could find your answer. But if not, then feel free to ask us without any hesitations.</p>
+          <hr class="border-dashed border-2 mx-2">
+        </section>
+      </section>
+      <section class="mt-7 lg:mt-auto">
+        <div class="hero min-h-screen">
+          <div class="hero-content flex-col gap-10 lg:gap-52 lg:flex-row">
+            <img src="Images/11.png" class="mx-w-sm lg:w-1/2 rounded-lg shadow-xl" />
+            <div>
+              <div class="collapse collapse-plus ">
+                <input type="radio" name="my-accordion-3" checked="checked" /> 
+                <div class="collapse-title text-xl font-medium">
+                  What is the process of registration in your club?
+                </div>
+                <div class="collapse-content"> 
+                  <p>You have to come during any working day. Then take the form from us and the fill it up. Lastly submit the form and your registration is done.</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus ">
+                <input type="radio" name="my-accordion-3" /> 
+                <div class="collapse-title text-xl font-medium">
+                  How many days a week is your club open?
+                </div>
+                <div class="collapse-content"> 
+                  <p>Open all days except Friday</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus ">
+                <input type="radio" name="my-accordion-3" /> 
+                <div class="collapse-title text-xl font-medium">
+                  How much money do I need to pay to join?
+                </div>
+                <div class="collapse-content"> 
+                  <p>You have to pay 5,000 BDT.</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus ">
+                <input type="radio" name="my-accordion-3" /> 
+                <div class="collapse-title text-xl font-medium">
+                  Do you have any other charges?
+                </div>
+                <div class="collapse-content"> 
+                  <p>No.</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus ">
+                <input type="radio" name="my-accordion-3" /> 
+                <div class="collapse-title text-xl font-medium">
+                  How long is the warranty on your products?
+                </div>
+                <div class="collapse-content"> 
+                  <p>3 years official warrenty.</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus ">
+                <input type="radio" name="my-accordion-3" /> 
+                <div class="collapse-title text-xl font-medium">
+                  Tell us about your terms and conditions.
+                </div>
+                <div class="collapse-content"> 
+                  <p>Check our another website.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <section class="text-center space-y-9">
+          <hr class="border-dashed border-2 mx-2 mt-12 lg:mt-20">
+          <h3 class="mt-2 lg:mt-10 text-xl lg:text-4xl font-extrabold">Get In Touch</h3>
+          <p class="text-gray-500 mx-2 lg:mx-40">If you have any query or registration related issue, then feel free to talk with us regarding your any problem. Here is our form where you can write your query and submit it to us. We will response.</p>
+          <hr class="border-dashed border-2 mx-2">
+        </section>
+      </section>
+      <section>
+        <div class="mt-12 grid grid-cols-1 lg:grid-cols-3 gap-6">
+          <div>
+            <div class="card h-[200px] w-full bg-primary text-primary-content">
+              <div class="card-body">
+                <img class="w-12" src="Images/Group 1171275317.png" alt="">
+                <p class="mt-4">Phone Number</p>
+                <p class="font-extrabold">(+62) 123-321-543</p>
+              </div>
+            </div>
+            <div class="card mt-4 h-[200px] w-full bg-primary text-primary-content">
+              <div class="card-body">
+                <img class="w-12" src="Images/Group 1171275318.png" alt="">
+                <p class="mt-4">Email</p>
+                <p class="font-extrabold">hockeys@support.com</p>
+              </div>
+            </div>
+            <div class="card mt-4 h-[200px] w-full bg-primary text-primary-content">
+              <div class="card-body">
+                <img class="w-12" src="Images/Group 1171275321.png" alt="">
+                <p class="mt-4">Location</p>
+                <p class="font-extrabold">152/1 Mohakhali Wireless Gate</p>
+              </div>
+            </div>
+          </div>
+          <div class="lg:col-span-2">
+            <div class="grid gap-4 grid-cols-1 lg:grid-cols-2">
+              <div>
+                <label for="" class="font-extrabold ml-2">Your Name</label>
+                <input type="text" placeholder="Enter your full name" class="input input-bordered w-full mt-1 lg:mt-2" />
+              </div>
+              <div>
+                <label for="" class="font-extrabold ml-2">Your Email</label>
+                <input type="text" placeholder="Enter your email" class="input input-bordered w-full mt-1 lg:mt-2" />
+              </div>
+            </div>
+            <div class="grid gap-4 grid-cols-1 lg:grid-cols-2 mt-4 lg:mt-5">
+              <div>
+                <label for="" class="font-extrabold ml-2">Subject</label>
+                <input type="text" placeholder="Enter your subject" class="input input-bordered w-full mt-1 lg:mt-2" />
+              </div>
+              <div>
+                <label for="" class="font-extrabold ml-2">Phone Number</label>
+                <input type="text" placeholder="Enter your phone number" class="input input-bordered w-full mt-1 lg:mt-2" />
+              </div>
+            </div>
+            <div class="mt-4 lg:mt-5">
+              <label for="" class="font-extrabold ml-2">Message</label>
+              <textarea class="w-full h-[200px] lg:h-[325px] textarea textarea-bordered mt-1 lg:mt-2" placeholder="Write your message"></textarea>
+            </div>
+            <button class="btn btn-error text-white text-base lg:text-xl w-full mt-4 lg:mt-5">Send Message</button>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
     </footer>
